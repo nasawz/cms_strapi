@@ -1,0 +1,26 @@
+{
+  "envId": "{{env.ENV_ID}}",
+  "framework": {
+    "name": "cms",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "cms",
+          "servicePath": "/",
+          "localPath": "./",
+          "cpu": 1,
+          "mem": 2,
+          "containerPort": 1337,
+          "uploadType": "image",
+          "imageInfo": {
+            "imageUrl": "nasawz/cms_strapi:latest"
+          }
+        }
+      }
+    }
+  },
+  "functionRoot": "./functions",
+  "functions": [],
+  "region": "ap-shanghai"
+}
