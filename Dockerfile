@@ -5,7 +5,7 @@ WORKDIR /srv/app
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
-RUN npm install pm2 -g
+# RUN npm install pm2 -g
 
 RUN yarn install
 
@@ -17,5 +17,5 @@ RUN yarn build
 
 EXPOSE 1337
 
-# CMD ["yarn", "start"]
-CMD ["pm2-runtime", "server.js"]
+CMD ["yarn", "start"]
+# CMD ["pm2-runtime", "server.js"]
