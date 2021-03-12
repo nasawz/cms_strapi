@@ -17,7 +17,7 @@
             "imageUrl": "nasawz/cms_strapi:latest"
           },
           "volumeMounts": {
-            "/srv/app/tmp": "data-cfs",
+            "/srv/app/data": "data-cfs",
             "/srv/app/public/uploads": "uploads-cfs"
           }
         }
